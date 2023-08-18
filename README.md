@@ -2,8 +2,8 @@
 In this repository, I will write the things I've learned, which doesn't contain any html, js, or any other files than txt.
 
 
-8/18/2023
-5:49PM
+8/18/2023   5:49PM
+<br>
 Today I've learned about emmet syntaxes as well as some usefull cheat sites
 https://docs.emmet.io/cheat-sheet/
 https://htmlcheatsheet.com/css/
@@ -14,8 +14,10 @@ syntax > is saying that, the p element is the child of div. So basically the div
 syntax $ describes the item numbering, from 1 to x
 syntax * describe exactly what you think it's doing, it simply works as multiplier, we want it to contain 3 elements, so we're multyplying by 3.
 div>p.class$*3
-8/18/2023
-6:38
+
+<hr>
+8/18/2023   6:38
+<br>
 I've learned some info about what are svg's.
 While I confidently don't know a larger part of what svg's are more in advanced meaning but I surely get them in their basic meaning.
 
