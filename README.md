@@ -49,29 +49,28 @@ It also improves the readability and make it more accessible and comprehensible 
 table html property.
 The thing with `tbody`, and `tfooter` is the same. In `tbody`, we're indicating the main data of our table, the footer is basically the last row in the table. 
 It is also worth to mention, that whenever we apply the `tfooter`, no matter where the table row will sit, it will always be pushed to the down due to tfooter functionality.
-
-`<table>`
-  `<caption>Table Caption</caption>`
-`  <thead>`
- `   <tr>`
-   `   <th>Column Header 1</th>`
-`      <th>Column Header 2</th>`
- `   </tr>`
-`  </thead>`
-`  <tbody>`
-`    <tr>`
- `     <td>Data Cell 1</td>`
-  `    <td>Data Cell 2</td>`
- `   </tr>`
+<table>
+  <caption>Table Caption</caption>
+  <thead>
+    <tr>
+      <th>Column Header 1</th>
+     <th>Column Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+    </tr>
     <!-- Additional rows and data cells go here -->
-`  </tbody>`
-`  <tfoot>`
-`    <tr>`
-   `   <td>Footer Cell 1</td>`
-`      <td>Footer Cell 2</td>`
-`    </tr>`
-`  </tfoot>`
-`</table>`
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer Cell 1</td>
+      <td>Footer Cell 2</td>
+   </tr>
+  </tfoot>
+</table>
 
 <hr>
 <br>
