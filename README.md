@@ -36,3 +36,42 @@ max-height="" same as above, bud the height of created box.
 
 By defining all those values, we are certain that the browsers and software, will correctly understand that the content is svg, and within the box will be created elements
 dependingly of the given viewBox values.
+<hr>
+<br>
+8/19/2023 2:08 PM
+<br>
+Today I've recapped some basic, but meaningfull things about creating the table in html.
+The syntax for creating table is following:
+This is a basic table structure. The "table" indicates that we are starting and ending the table.
+The "caption" indicates what the table is writting about.
+The "theader" is a thing which helps recognize the structure of table for screen readers even betters, we should indicate it always.
+It also improves the readability and make it more accessible and comprehensible for all users. Overall it is recommended to always include those things in the 
+table html property.
+The thing with tbody, and tfooter is the same. In tbody, we're indicating the main data of our table, the footer is basically the last row in the table. 
+It is also worth to mention, that whenever we apply the tfooter, no matter where the table row will sit, it will always be pushed to the down due to tfooter functionality.
+"
+<table>
+  <caption>Table Caption</caption>
+  <thead>
+    <tr>
+      <th>Column Header 1</th>
+      <th>Column Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+    </tr>
+    <!-- Additional rows and data cells go here -->
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer Cell 1</td>
+      <td>Footer Cell 2</td>
+    </tr>
+  </tfoot>
+</table>
+"
+<hr>
+<br>
