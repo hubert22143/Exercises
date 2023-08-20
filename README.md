@@ -103,3 +103,29 @@ It is also worth to mention, that whenever we apply the `tfooter`, no matter whe
 
 <hr>
 <br>
+8/20/2023 2:26 PM
+
+Today I've learned some about the responsive units.
+<br>
+It's mostly about using the rem or em to the font-size's of our's body.<br>
+By basic, the default font-size on body is 16px(1rem/em === 16px). If you want to care about the user settings, and want your font-size to be responsive on the site then you shall use one of those.<br>
+The em units works following: <br>
+If we set font-size on the parent for 1em, the child will get font-size doubled from before so 2em, so the font-size is basically nesting through elements. <br>
+That's why personally I choosed that, I will use the rem property, which doesn't nest through the elements. If the font size on the body equals 16, and you set for example on some element <br>
+font size which equals to 0,875rem, it will equals 14px.
+
+I've also been learning about some hard concept for me, which are viewports properties. <br>
+While I certainly understand the usage of viewport heigth, which would be in case: <br>
+We have declared the header, and footer, and both of their min-heigth equals to 60, if we would like to <br>
+It is also worth of mentioning, we should always define the heigth of element using min-height, by doing so, <br>
+we assure that the responsive styling will be applied, and overall it is recomended to use that value instead of basic heigth <br>
+Make the body heigth to appear in the rest of available space(then we substract the header, and the footer heigth from the total viewport height, so total available - our usage from header and footer), we would just use calc(100vh - 120px) <br>
+And that's the usage in case that I would use it.
+
+I would rather not using vw 100% to declare the width of our elements, because of the unnecessary scroll showing at <br>
+the bottom of the site. I know that I can esaily hide it by using overflow-x: hidden;, but still it doesn't appeal to me <br>
+that's why I would stick with the default usage, of width 100%. But I can see the usage of this, in case we would need that <br>
+flow-x, then it is certainly usefull in those scenarios.
+
+
+
