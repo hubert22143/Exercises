@@ -126,6 +126,13 @@ I would rather not using vw 100% to declare the width of our elements, because o
 the bottom of the site. I know that I can esaily hide it by using overflow-x: hidden;, but still it doesn't appeal to me <br>
 that's why I would stick with the default usage, of width 100%. But I can see the usage of this, in case we would need that <br>
 flow-x, then it is certainly usefull in those scenarios.
+<br>
+<hr>
+8/21/2023 8:01 PM
+Today I've recapped some properties in css, such as: background shorthand, and the properties, margin,padding and the overflow aswell, and many other<br>
+properties. I've also realized how important it is, to use header,sections and the footer itself as well. Very simple things, but how much important they are.<br.
+
+<hr>
 
 
 
