@@ -133,6 +133,16 @@ Today I've recapped some properties in css, such as: background shorthand, and t
 properties. I've also realized how important it is, to use header,sections and the footer itself as well. Very simple things, but how much important they are.<br.
 
 <hr>
+<br>
+8/22/2023 4:34 PM<br>
+Today i've worked on css properties, and done a lot of example exercises which are including properties like : [attribute="value"]($^properties), [last-child],[first-child],[nth-child], and others not included in the exercises like : [::selection] , [::marker] , [:link] , [:visited] , [:focus] , [:active]. <br>
+Examples I am talking about you can see at the site: https://flukeout.github.io/
+
+I've learned also about top element called :root, there we will place our global variables and properties such as box-sizing:border-box, which would mean that any border or padding will be included into the box, which will maintain prefered stylisation. So for example if you set width and heigth equal to 100px, it will be added to the actual width and heigth.
+
+<br>
+<hr>
+
 
 
 
