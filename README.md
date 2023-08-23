@@ -1,5 +1,7 @@
-# Exercises
-In this repository, I will write the things I've learned, which doesn't contain any html, js, or any other files than txt.
+# Blog? Treat this repository as something I use to say about the things i've learned.
+In this repository, I will write the things I've learned, which doesn't contain any html, js, or any other files than txt. <br>
+
+This repository is intented to help me to recap the most informations i've gathered at the end of the day. Though it might not be really helpfull and understandable for you, it is for me. <br>
 
 
 8/18/2023   5:49PM
@@ -142,7 +144,72 @@ I've learned also about top element called :root, there we will place our global
 
 <br>
 <hr>
+7:25 PM 8/23/2023<br>
+Today I was learning about complex selectors. While there the common way to refer to some element is setting them up class or id we can also do it other way.<br>
+The descendant selector is the most common, it matches an indentified ancestor. For example:<br>
+article h2{}, <br>
+In this example only elements in article which include h2 element would be selected. <br>
+The Direct Child Selector is a bit different. <br>
+The syntax for it is following : article > p {}, <br>
+It means that the every p element in the article will be selected, but it can't be nested. For example if there was article, and inside it div, and inside the div element p, it wouldn't be selected. <br>
+The next thing is General Sibling selector, they are created by using the tilde character ~,<br>
+For example : h2 ~ p {}, that means, the p selector will be selected, if they will share the same parent. <br>
+Adjacent Sibling Selector, <br>
+For Example : h2 + p, it will only work for the p element which is written after the h2. <br>
+Attribute present selector, <br>
+In order to use this one, we need to use square brackets, for example:<br>
+html<br>
+"<a href="#" target="_blank">...</a>"<br>
+css<br>
+"a[href="http://google.com/"] {...}"<br>
 
+Attribute contains selector <br>
+This one we use when we need to find element based on part of an attribute, <br>
+The attributes we can use are : * , ^ , $ <br>
+The * means, that it must appear, or be contained within attribute value, for example: <br>
+"a[href*="login"] {...}"<br>
+and html: <br>
+"<a href="/login.php">...</a>" <br>
+The ^ means, that it must start with stated value, <br>
+And the $ means, that it must end with the certain value. <br>
 
+In case that, that the attribute is spaced, we need to use ~, and while it is hyphenated, we need to use =. <br>
+
+Some infos about User Interface State Pseudo-Classes. <br>
+Pseudo-Classes, are element state which include somewhich of those elements : :enabled, :disabled, :checked, :indeterminate, and some other which already mentioned in some other way.<br>
+The element indeterminate, means the checkbox or radio button that has been not selected, or unselected. <br>
+<br>
+The important things to know about css, are also childs.<br>
+:first-child , :last-child , :only-child <br>
+:first-child - Selects the first child of an element, for example: li:first-child{}, will select the first child of li,<br>
+:last-child - Will select the last child of an element,<br>
+:only-child - div:only-child will lok for a division that is the single child of a parent element, without any other siblings. <br>
+Childreens of parent are pretty helpfull, and it is aften used. But sometimes you need to select the first, last, or only child of a specific type of element, there are where those comes handfull: <br>
+:first-of-type, :last-of-type, :only-of-type,
+The main difference between them is that, we select the certain element of type, so for example<br>
+When the :first-child would select the first child of some element, the :first-of-type, would select certain first type of element.<br>
+
+The very handfull in styling comes also :nth-child(n) & :nth-last-child(n) <br>
+Their usage comes very handfull, when we want to select certain elements in some group of for example li. <br>
+Lets say we have ul, and inside we have 6 li. And we want to only select the third, and sixth li. <br>
+In order to do that, we can use li:nth-child(3n){}, which means it will selects every third character of li. It works like that: 3x0 , 3x1 , 3x2 , ... <br>
+
+We can also select the "base position" of which we want to come further, for example li:nth-child(2n+3){}, it means that, we will start from third li element, and keep adding 2 till there's no more li to stylize. <br>
+We could also select the negative number for n, which would mean that we're starting from 0 position. So basically if I wrote like li:nth-child(-n+4), it would start from position 0, and add those four li which will be styled. <br>
+
+The :nth-last-child(n) simply changes the direction of counting, so I won't give any examples for this, since it's just doing that, and the logic, and everything is the same, just from the back. <br>
+We can also select it for types : :nth-of-type(n) & :nth-last-of-type(n) , the logic and everything stays the same. <br>
+
+Pseudo-Classes: <br>
+:target - In order to this property to work, we must give the id for section, and the same id for the hyperlink we want to refer the section with. <br>
+:empty - It will select element which do not contain childreens, or text nodes to be selected. <br>
+:not(x) - It will select every class, that does not contain the x(class) element.<br>
+
+Pseudo-Elements: <br>
+:first-letter - As you think, it select the first letter of certain element <br>
+:first-line : As you think, it selects the first line of an element. <br>
+:before - it creates some not signitificant content to our element before the text,<br>
+:after - Same as upper, but after the text.<br>
+::selection - Have you ever played with tab on some site? The selection is exactly for that to style the selected the part of document, or highlitghted by tab action. <br>
 
 
