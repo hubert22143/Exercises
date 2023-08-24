@@ -211,5 +211,16 @@ Pseudo-Elements: <br>
 :before - it creates some not signitificant content to our element before the text,<br>
 :after - Same as upper, but after the text.<br>
 ::selection - Have you ever played with tab on some site? The selection is exactly for that to style the selected the part of document, or highlitghted by tab action. <br>
-
+<hr>
+<br>
+7:11 PM 8/24/2023
+Today I've learned about Positioning. There are a few positioning of elements which are very usefull, and worth of mentioning, they includes: <br>
+- position: static - That positioning is by default on every element, the rules about it is very simple, you simply can not use top, bot, right, and left properties, they won't affect your element. <br>
+- position: absolute - This positioning is pretty usefull if we want to put the element to stay in the same position even when other element might occur, and move it, it simply won't because of that. For example,<br>
+if we want to put position absolute, within the parent, we need to use position:relative for the parent, in other case the element we've used absolute on, will move to the full up,bottom,right or left due to default position static for the parent container, overall it is very usefull position, but we should avoid it in cases we are creating the layouts - it isn't made for that. <br>
+- position: relative - This positioning is often misussed, the main reason why you would use it, is that it simply allows you to use the properties top, right, bot and left. <br>
+- position: sticky - This positioning is working like relative by default, once you scroll down, it will act as fixed so it will appear dependingly of which properties we set, the thing worth of mentioning is that, it won't act as fixed once it passes it's parent heigth <br>
+- position: fixed - This is very usefull for nav section, it helps our nav to stay at the top of the site, and provide fast accesibility to it. 
+<br>
+<hr>
 
