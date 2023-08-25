@@ -223,4 +223,15 @@ if we want to put position absolute, within the parent, we need to use position:
 - position: fixed - This is very usefull for nav section, it helps our nav to stay at the top of the site, and provide fast accesibility to it. 
 <br>
 <hr>
+7:15 PM 8/25/2023 
+Today I've learned about four really important properties for making our website responsive. <br>
+We use those properties in order to make our site fluid and responsive. <br>
+clamp(min,preffered,max) - This property is used mostly to font-sizes, it takes the preffered value as default, and while u shrink the page it won't get narrower than the min value, also it won't get wider than max value. <br>
+calc(1rem + 2vh) - We can use this property in case to calculate something with different units. <br>
+width: min(300px,50%) - We specify the two values, by default it's gonna be the 300px, but if we go shrinker that that, then it will become the 50%<br>
+width: max(300px,50%) - We specify the two values, then we basically set the width to 50%, unless the available space drops to 300px. <br>
+<hr>
+<br>
+
+
 
