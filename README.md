@@ -232,6 +232,12 @@ width: min(300px,50%) - We specify the two values, by default it's gonna be the 
 width: max(300px,50%) - We specify the two values, then we basically set the width to 50%, unless the available space drops to 300px. <br>
 <hr>
 <br>
-
+12:21 PM 8/26/2023
+Today I've learned about custom properties. <br>
+A custom properties is, a custom, choosen by the user wishen property. The syntax from custom property is following : --name:value; <br>
+We should define the custom properties in the :root of html, which is the highest available level. This allows us to have access to the custom property on every level of html, root has more significance than html. <br>
+To access the custom property we write following syntax, for example: background-color: var(--name); where --name equals the --name of custom property described in our root level. <br>
+This approach simplifi the management of consistent values throughout your stylesheets, enancing maintainability and making it easier to apply changes across multiple elements. <br>
+<hr>
 
 
