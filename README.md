@@ -239,5 +239,9 @@ We should define the custom properties in the :root of html, which is the highes
 To access the custom property we write following syntax, for example: background-color: var(--name); where --name equals the --name of custom property described in our root level. <br>
 This approach simplifi the management of consistent values throughout your stylesheets, enancing maintainability and making it easier to apply changes across multiple elements. <br>
 <hr>
-
+<br>
+Today I've learned the importance of compatibility on various browsers. The most important thing to remember while working on your project is to check if every, or most of browsers are compatible with the new features. We also should give special meaning to Ios browser which is safari. Though the users are available to install other browsers, it's all running by safari engine, due to 'security reasons', we certainly want to check if user get it's designed output on most of browsers. 
+<br>
+<hr>
+<br>
 
