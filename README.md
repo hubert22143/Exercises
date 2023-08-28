@@ -244,4 +244,14 @@ Today I've learned the importance of compatibility on various browsers. The most
 <br>
 <hr>
 <br>
-
+1:58 PM 8/28/2023 <br>
+Today I've learned about Preprocessors and Frameworks. <br>
+The framework itself is some packed content itself ready to use. A proper examply of this would be for example BootStrap,Foundation,Tailwind. The most advantages of why would you like to use the framework, mostly would be because of responsive-design, as well as it makes easier to build things on site. They are also usefullness, because of the community. If you comes to happen a error due to some framework, you can easily find a solution of network. It also made your work a lot faster, instead of building site of stratch, you can use some already pre-built elements like nav, buttons, etc. The disadvantage of frameworks like BootStrap, is that they made look sites very similar. Personally, as a user I wouldn't enjoy entering a two sites, and see that the two site's are almost designed the same way. Sometimes it can make it very hard to make a custom implementation, it can be really challenging to deviate from estabilished patterns and components provided by the framework. Due to it's patterns, you can sometimes across in some not wished behaviour on styling output from framework. 
+<br>
+Overall, there are a lot od advantages, and disadvantages of using frameworks while working on some project. Personally, at my level, I see no advantages to trying learn any framework, because I still lack the basics, and it's brackless to rush more advanced things without even knowing about the basics firsts. The choice if I use them will most probabely depend on my future employer.
+<br>
+The preprocessors are tools which make write our css way faster. They extend our basic vanilla css, adding some functions, variables, nesting. They also make our css more readable, more-well organized, and allows us to not repeat code. The examples of currently used preprocessors are: Sass,Scss,Less,Stylus. <br>
+I won't be writing in details about every of them, since I dont know them that well, but I will give a basic differences between them. <br>
+The main things which they differ on are syntaxes. For example, While on Sass, you must avoid the semicolons, and bracket's, on Scss you must have them provided. There also are other ways of variable syntax, while on Scss and Sass we define it by using : <br>
+$font-color #333 while scss, and $font-color: #333: while sass, the Less actually would use @ syntax for defining those. <br>
+The main choice of choosing between them differ's on your, or employer needs. The most hard thing would be learning about the syntaxes, I mean while the syntaxes on Sass aren't the main problem, as you can see the main problem becomes the bad-readability, so we have to have in mind about the basics while wishing to choose any between them. It's also worth to have in mind, that the Sass is currently the most used preprocessor.
