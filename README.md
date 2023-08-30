@@ -255,3 +255,17 @@ I won't be writing in details about every of them, since I dont know them that w
 The main things which they differ on are syntaxes. For example, While on Sass, you must avoid the semicolons, and bracket's, on Scss you must have them provided. There also are other ways of variable syntax, while on Scss and Sass we define it by using : <br>
 $font-color #333 while scss, and $font-color: #333: while sass, the Less actually would use @ syntax for defining those. <br>
 The main choice of choosing between them differ's on your, or employer needs. The most hard thing would be learning about the syntaxes, I mean while the syntaxes on Sass aren't the main problem, as you can see the main problem becomes the bad-readability, so we have to have in mind about the basics while wishing to choose any between them. It's also worth to have in mind, that the Sass is currently the most used preprocessor.
+<hr>
+<br>
+8/29/2023<br>
+Today I've recapped some informations about creating form. <br>
+We use the form, in case we're submitting something, where interactive buttons comes in the way.
+The form itself needs two default value's, action which processes the form submission, and the method. There are two main method values POST and GET. The biggest difference between them is that, when you set GET value, the data which you apply, lets say for example when you register a account, then after clicking button apply, all data you've written will appear in the link message. It is very insecure in usage for that cases. It also allows the user to write some script and make weird thing's happen. Overall when we want to use GET, we should know what we're doing we would use it for example for searching purposes. The most value which we will using will be POST, because it is secure, it doesn't allow to write some script and apply it to the site.
+<br>
+Now, the form contains input values, in order to make things readable for various devices, such as a screen reader and so on, we should use label. We use that basically for saying what's the input there is for, and to improve the user experience on such a devices. 
+<br>
+We can also use some placeholder on some input, so user will know even better what this input is for. <br>
+In order we want to group all related unit's into one, we can use the Fieldset which will create a nice border, in order to improve it even more, we can use the legend, which will go into the border.
+<br>
+<hr>
+<br>
