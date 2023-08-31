@@ -269,3 +269,10 @@ In order we want to group all related unit's into one, we can use the Fieldset w
 <br>
 <hr>
 <br>
+12:05 PM 8/31/2023 <br>
+Today I've learned some forms attributes, <br>
+required - This validation make a certain input neccessary to write/check, if we try to submit the form without making that input, "please field this field" output will show. <br>
+minlength / maxlength - Those validations have usage in the inputs for the min/max length <br>
+min/max - Those validations have usage of type number for the min / max quantity <br>
+pattern - We can use this validation for make certain pattern for example zip-code pattern="^(\d{2}(-)\d{3}$)" <br>
+:focus , :valid , :invalid , :hover, ::placeholder, - some pseudoclasses to style in css <br>
