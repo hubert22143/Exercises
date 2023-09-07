@@ -276,3 +276,13 @@ minlength / maxlength - Those validations have usage in the inputs for the min/m
 min/max - Those validations have usage of type number for the min / max quantity <br>
 pattern - We can use this validation for make certain pattern for example zip-code pattern="^(\d{2}(-)\d{3}$)" <br>
 :focus , :valid , :invalid , :hover, ::placeholder, - some pseudoclasses to style in css <br>
+
+<hr>
+7:43 PM 9/7/2023 <br>
+Today I've started learning about grid <br>
+The main things with what grid comes in, is two dimensional layout. It means that, instead of working like on flex - one dimensional layout row or column, we can work on both on grid, which grant us access to modify their width, height, location, as we would like to. In order to access column / row layout in grid, we need to use those properties <br>
+  grid-template-columns <br>
+  grid-template-rows <br>
+  But we can use as well the shortcut: <br> 
+grid-template: 50px 50px / 50px 50px 50p - Where before the slash / we're indicating the row, and after the column.
+
