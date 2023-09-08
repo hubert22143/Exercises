@@ -285,4 +285,33 @@ The main things with what grid comes in, is two dimensional layout. It means tha
   grid-template-rows <br>
   But we can use as well the shortcut: <br> 
 grid-template: 50px 50px / 50px 50px 50p - Where before the slash / we're indicating the row, and after the column.
+<br>
+<hr>
+Today I continued learning about grid. <br>
+How can we set the gaps between columns / row : <br>
+grid-column-gap: 10px; / grid-row-gap: 10px; <br>
+How can we set the implict grid value? <br>
+grid-auto-rows: 50px // grid-auto-columns: 50px // - It will set 50px row value, and 50px column value, which will be used for every next content which haven't been defined in the grid-template. <br>
+The most wished value to use for track size is fractional unit, for example: <br>
+grid-template: 1fr 2fr / 3fr 1fr  -- It will make the second row have 2 times more space than the first row, and 3 times more column space than second column space <br>
+Let's say we have .container which is grid box, and the .item -a, which is grid item: <br>
+.item-a {<br>
+  grid-column-start: 2;<br>
+  grid-column-end: five;<br>
+  grid-row-start: row1-start;<br>
+  grid-row-end: 3;<br>
+}<br>
+Though, we haven't defined any row / collumn, the following thing are going to happen with -item-a. <br>
+It's going to be positioned at second column,(the website will automatically create as much as provided example need rows/columns) and the positioning will end at column five, it will start from the first row and goes untill third row.
+<br>
+We can also define explicitly the name of the lines, for example: <br>
+.container {<br>
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];<br>
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];<br>
+}<br>
+There, we define that the first column is named first, and has width of 40px, and heigth of 25%, the first row is called row-1started, followed by row1-end. Then we have defined the line2 column which has 50px, line3 column which has auto property it means that the free space, that the container has will be filled by line3 to col4-start. We would like to achieve this behaviour, in order to make it more readable, in case the user is debugging, and looking for some error in chrome developer view for example.<br>
+There is also one usefull property we could want to use, which is repeat(), <br>
+the repeat function takes 3 values, ((number of times we like to repeat,(value of chosen grid-template), [and the name we would like to add every next line]) for example:<br>
+grid-template-columns: repeat(3, 20px [col-start]); which would be equivalent to <br>
+ grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start]; <br>
 
