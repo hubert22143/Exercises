@@ -314,4 +314,21 @@ There is also one usefull property we could want to use, which is repeat(), <br>
 the repeat function takes 3 values, ((number of times we like to repeat,(value of chosen grid-template), [and the name we would like to add every next line]) for example:<br>
 grid-template-columns: repeat(3, 20px [col-start]); which would be equivalent to <br>
  grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start]; <br>
-
+<hr>
+Today I was learning about javascript object and object constructors. <br>
+    The simplest form of an object is created like this:<br>
+javascript<br>
+myobj = { age: 16, ... };<br>
+You can access the value of age using dot notation:<br>
+javascript<br>
+console.log(myobj.age);<br>
+    An example of an object constructor is as follows:<br>
+javascript<br>
+function Person(name, age) {<br>
+    this.name = name;<br>
+    this.age = age;<br>
+}<br>
+You don't need to explicitly return the object in the constructor unless you are creating an instance using the new keyword. For example:<br>
+javascript<br>
+const Adrian = new Person('Adrian', 12);<br>
+If you want to create an object without using the new keyword, you can return the object explicitly within the constructor. <br>
