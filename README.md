@@ -332,3 +332,84 @@ You don't need to explicitly return the object in the constructor unless you are
 javascript<br>
 const Adrian = new Person('Adrian', 12);<br>
 If you want to create an object without using the new keyword, you can return the object explicitly within the constructor. <br>
+<hr>
+<br>
+Learning About Objects, Prototypes, and the this Keyword in JavaScript<br>
+Today, I continued my journey into the world of JavaScript objects. I began by solidifying my understanding of the basics. Now, I'm ready to explain how the inheritance of prototypes works and what the prototype property is, as well as shed some light on the mysterious this keyword.<br>
+Prototypes and Their Role<br>
+
+Let's start with prototypes. Every object in JavaScript has a prototype. To illustrate this, consider the following function:<br>
+javascript<br>
+function Player(name, surname) {<br>
+    this.name = name;<br>
+    this.surname = surname;<br>
+}<br>
+
+When we create the Player function, it automatically creates its own prototype. We can extend this prototype by adding as many methods as we need, like this:<br>
+
+javascript<br>
+
+Player.prototype.fullname = function() {<br>
+    console.log(`Your full name is ${this.name} ${this.surname}`);<br>
+};<br>
+
+Here, we've added a method called fullname to the prototype. This method can be accessed by any instance of the Player object via the .fullname property. It simply returns the full name.<br>
+
+To create an instance, we need to invoke the constructor function, like so:<br>
+
+javascript<br>
+
+const playerOne = new Player("Hubert", "Baciak");<br>
+
+Now, playerOne has the name set to "Hubert" and the surname set to "Baciak." This instance can already use the prototype method fullname because of inheritance. By doing this, we effectively link the playerOne object to the Player prototype chain. We could also add prototype methods specific to playerOne, but we won't do that here.<br>
+Checking the Prototype Chain<br>
+
+To confirm that playerOne is indeed linked to the Player prototype, we can perform the following checks:<br>
+
+Using Object.getPrototypeOf:<br>
+
+javascript<br>
+
+if (Object.getPrototypeOf(playerOne) === Player.prototype) {<br>
+    console.log("playerOne is attached to the Player prototype.");<br>
+} else {<br>
+    console.log("playerOne is not attached to the Player prototype.");<br>
+}<br>
+
+Or, using the instanceof operator:<br>
+
+javascript<br>
+
+if (playerOne instanceof Player) {<br>
+    console.log("playerOne is an instance of Player.");<br>
+} else {<br>
+    console.log("playerOne is not an instance of Player.");<br>
+}<br>
+
+Both methods confirm the connection between playerOne and the Player prototype.<br>
+Modifying the Prototype Chain<br>
+
+We can also set the prototype chain to link to another prototype using Object.setPrototypeOf. For example:<br>
+
+javascript<br>
+
+Object.setPrototypeOf(playerOne.prototype, Player.prototype);<br>
+
+This line of code makes playerOne inherit all its methods from Player.<br>
+Understanding this in Constructors<br>
+
+As for the this keyword in object constructors, it's rather straightforward. In the context of an object constructor, this refers to the object created via method invocation. Consider this example:<br>
+
+javascript<br>
+
+function Foo() {<br>
+    // Here, `this` refers to `fooInstance`<br>
+    this.property = 'Default Value';<br>
+}<br>
+
+// Constructor invocation<br>
+const fooInstance = new Foo();<br>
+console.log(fooInstance.property); // Outputs: 'Default Value'<br>
+
+In this case, fooInstance inherits the .property from Foo because that's simply how inheritance and this work in constructor invocation.<br>
+<hr>
