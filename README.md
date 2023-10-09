@@ -413,3 +413,13 @@ console.log(fooInstance.property); // Outputs: 'Default Value'<br>
 
 In this case, fooInstance inherits the .property from Foo because that's simply how inheritance and this work in constructor invocation.<br>
 <hr>
+<br>
+Today, I began learning about factory functions and the module pattern in JavaScript. The primary distinction between factory functions and constructors is that factory functions return objects immediately without using the 'new' keyword.<br>
+<br>
+The Immediately Invoked Function Expression (IIFE) enables us to execute a function immediately after defining it, example: <br>
+(function() {<br>
+  let message = "Hello, IIFE with 'let'!"; // 'message' is scoped to the IIFE block.<br>
+  <br>
+  console.log(message);<br>
+  It will immediately return console.log message.
+})();<br>
