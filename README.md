@@ -423,3 +423,15 @@ The Immediately Invoked Function Expression (IIFE) enables us to execute a funct
   console.log(message);<br>
   It will immediately return console.log message.
 })();<br>
+<br>
+<hr>
+Today I continued learning on factory function. <br>
+The main difference between factory function, and constructor is that, the factory function does not use the new keyword to create an object which can lead to many bugs. <br>
+Factory function allows us to avoid the namespace purity, there won't be issues with instances, as there may appear on constructor functions. <br>
+It enchances code maintability, since we're writing the private, and public functions in factory function. <br>
+Overall, using facotry function over constructors, can lead to more maintability code, and free from bugs code. <br>
+<br>
+<hr>
+<br>
+
+
