@@ -433,5 +433,7 @@ Overall, using facotry function over constructors, can lead to more maintability
 <br>
 <hr>
 <br>
-
+Today i've started learning about class keyword, it's usage, pros, cons, and about object creations. 
+<hr>
+<br>
 
