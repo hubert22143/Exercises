@@ -1,6 +1,5 @@
 # Blog? Treat this repository as something I use to say about the things i've learned.
 In this repository, I will write the things I've learned, which doesn't contain any html, js, or any other files than txt. <br>
-
 This repository is intented to help me to recap the most informations i've gathered at the end of the day. Though it might not be really helpfull and understandable for you, it is for me. <br>
 
 
@@ -25,7 +24,6 @@ syntax $ describes the item numbering, from 1 to x
 syntax * describe exactly what you think it's doing, it simply works as multiplier, we want it to contain 3 elements, so we're multyplying by 3.
 <br>
 div>p.class$*3
-
 <hr>
 8/18/2023   6:38
 <br>
