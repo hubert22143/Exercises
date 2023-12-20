@@ -431,7 +431,12 @@ Overall, using facotry function over constructors, can lead to more maintability
 <br>
 <hr>
 <br>
-Today i've started learning about class keyword, it's usage, pros, cons, and about object creations. 
-<hr>
-<br>
+Today I've started on learning Node Pack Manager. 
+The reason why node pack manager is necessary, is that because it allows us to freely share our code with developers with no perpexlity about the version of the project. It allows us to continue some work from certain point of production, which is usefull for organization co-operation work. The npm after initialization is creating one important file which is package.jsonm,, which contains all metadata, about packages,used version etc.
+
+The second important terminology are bundlers. They work along with the npm. It is used for management for the code, increased readability, more comfortable way of writing the code, essentially it allows you to keep everything up to date.
+Bundler's are working following way, the first thing they have to contain is the entry file, which is generally your main file. This process is called Dependency Resolution. The way it works, it's looking for dependencies in order to determine the dependencies of other dependencies, and sort it dependingly. The main reason why that's important is that, it automaticaly enable the modules to construct a dependency order, and wait for browser request for data. It also prevent the naming conflicts, it also detects all unnecessary files and removing it. After that is done, the stage Packing appears. During this process, everything basically get packed into one file, and is ready to be loaded by site. 
+
+The most popular bundler is Webpack, which I will also stick to use. The way webpack works is: At the first stage it looks for entry 
+
 
