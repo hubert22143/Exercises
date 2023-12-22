@@ -437,6 +437,17 @@ The reason why node pack manager is necessary, is that because it allows us to f
 The second important terminology are bundlers. They work along with the npm. It is used for management for the code, increased readability, more comfortable way of writing the code, essentially it allows you to keep everything up to date.
 Bundler's are working following way, the first thing they have to contain is the entry file, which is generally your main file. This process is called Dependency Resolution. The way it works, it's looking for dependencies in order to determine the dependencies of other dependencies, and sort it dependingly. The main reason why that's important is that, it automaticaly enable the modules to construct a dependency order, and wait for browser request for data. It also prevent the naming conflicts, it also detects all unnecessary files and removing it. After that is done, the stage Packing appears. During this process, everything basically get packed into one file, and is ready to be loaded by site. 
 
-The most popular bundler is Webpack, which I will also stick to use. The way webpack works is: At the first stage it looks for entry 
+The most popular bundler is Webpack, which I will also stick to use. The way webpack works is: At the first stage it looks for entry [12/22/2023] which should be our main file dependingly on our structure, module.exports = {  entry: './app/index.js',  };,
+we should also write destination of the output usually it's directory named dist const path = require('path');  module.exports = {  entry: './app/index.js',  output: {  path: path.resolve(__dirname, 'dist'),  filename: 'webpack-app.bundle.js',  },  };
+Loader point which allow webpack to transform, and bundle non-js files, Plugins which simply let us do some nice resource optimization and management, Mode which allows webpack to configure it's configurations or development mode dynamically.
+After doing that, it's creating one file which is transformed, with executed all those things I've writed, and that's basically it. Worth of mentioning is that we're simply running it by using npm i webpack.
+The pros of using webpack are: 
+- It has a rich plugin ecosystem which allow us to bundle almost everything
+- Due to a lot of customization settings webpack is most definitely chosen most of the times as being the best bundler available
+- Efficient error debugging process that makes your work easier
+- Solid third party ecosystem
+  However, though it's the best webpack, it's not bug-free software, and it's much more complex when we're learning it deeply, it's a double edged sword.
+
+
 
 
