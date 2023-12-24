@@ -448,6 +448,18 @@ The pros of using webpack are:
 - Solid third party ecosystem
   However, though it's the best webpack, it's not bug-free software, and it's much more complex when we're learning it deeply, it's a double edged sword.
 
+Now some info about ES6 modules. The ES6 modules is constructed with two statements which are import and export.By using that, we no more need module pattern. Module pattern allowed us to return the function's which we wish to be returned, with es6 module used, we're clearly stating which functions are we interesting in exporting, and it allows us to freely import the code in different file of js following the convention: 
+// a file called myModule.js
+const functionOne = () => 'ONE';
+const functionTwo = () => 'TWO';
+export {
+  functionOne,
+  functionTwo
+};
+// index.js in /src folder
+import {functionOne, functionTwo} from './myModule';
+
+It simply allows us to make it a little bit easier than in module patterns.
 
 
 
