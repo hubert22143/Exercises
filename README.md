@@ -460,6 +460,10 @@ export {
 import {functionOne, functionTwo} from './myModule';
 
 It simply allows us to make it a little bit easier than in module patterns.
+///
+Keys in React. They work as an unique identificator for chosen type from data for example in list of items. 
+//
+
 
 
 
